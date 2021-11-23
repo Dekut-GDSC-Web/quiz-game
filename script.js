@@ -26,4 +26,13 @@ var answer4 = document.getElementById("answer4");
 value1.innerText = putThisToValue1;
 value2.innerText = putThisToValue2;
 
+var correctAnswer = value1 + value2;
+
+
+
+//on answer click function
+function onAnswerClick(clicked_id){
+    alert(clicked_id)
+}
+
 answer1.style.color = "red";  
