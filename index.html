@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Quiz Game</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
   <style>
       .answer{
           margin: 25px;
           padding: 20px;
+          cursor: pointer;
       }
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -54,7 +57,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#">More games</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -67,28 +70,29 @@
 
   
 <div class="container text-center">    
-  <h3>What We Do</h3><br>
+  <h3>Choose the correct answer before time 0</h3><br>
   <div class="row" style="height: 450px;">
     <div class="col-sm-12  bg-success"  style="height: 450px;">
       
-        <h1>5</h1>
+        <h1 id="value1">5</h1>
+        <h1 id="value2">5</h1>
        </div>
   </div>
 </br>
   <div class="row"  style="height: 150px;">
     <div class="answer col-sm-2  bg-success" style="height: 150px;">
       
-     <h1>5</h1>
+     <h1 id="answer1">5</h1>
     </div>
     <div class="answer col-sm-2  bg-success" style="height: 150px;"> 
-        <h1>5</h1>
+        <h1 id="answer2">5</h1>
         
     </div>
     <div class="answer col-sm-2  bg-success" style="height: 150px;">
-        <h1>5</h1>
+        <h1 id="answer3">5</h1>
     </div>
     <div class="answer col-sm-2  bg-success" style="height: 150px;">
-        <h1>5</h1>
+        <h1 id="answer4">5</h1>
     </div>
    
   </div>
@@ -98,5 +102,6 @@
   <p>Footer Text</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
