@@ -22,7 +22,10 @@ var answer2 = document.getElementById("answer2");
 var answer3 = document.getElementById("answer3");
 var answer4 = document.getElementById("answer4");
 
-
+answer1.innerText = getRandom();
+answer2.innerText = getRandom();
+answer3.innerText = getRandom();
+answer4.innerText = getRandom();
 
 value1.innerText = putThisToValue1;
 value2.innerText = putThisToValue2;
@@ -33,10 +36,12 @@ answer3.innerText = correctAnswer;
 
 //on answer click function
 function onAnswerClick(clicked_id){
-    alert(clicked_id)
+    // alert(clicked_id)
     var clicked = document.getElementById(clicked_id);
     if(clicked.innerText == correctAnswer){
         alert("Correct!!!");
+    }else{
+        alert("Wrong Answer!!!")
     }
 }
 
